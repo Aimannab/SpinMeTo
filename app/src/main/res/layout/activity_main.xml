@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:name="com.exampleapp.android.capstone_project.GlobeFragment"
+        android:id="@+id/fragment"
+        android:contentDescription="@string/welcome_note"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/menu"
+        app:theme="@style/ToolBarStyle"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <TextView
+        android:id="@+id/tvSwipeDescription"
+        android:paddingTop="350dp"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="RtlCompat" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/swipe_desc"
+        android:layout_alignBottom="@id/fragment"
+        android:id="@+id/swipeicon"
+        android:layout_centerInParent="true"
+        android:src="@drawable/swipe_big_resize" />
+</RelativeLayout>
+

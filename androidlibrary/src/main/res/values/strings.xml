@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Android Library</string>
+    <string name="action_share">Share</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="app_title">#SpinMeTo</string>
+    <string name="swipe">Swipe</string>
+    <string name="share_fab_desc">Touch icon to share with friends</string>
+    <string name="map_fab_desc">Touch icon to navigate country location on Google Maps</string>
+    <string name="history_countries">List of past random countries selected for you</string>
+    <string name="map_desc">Location of your next holiday destination</string>
+    <string name="menu_desc">Touch menu to view list of past countries selected</string>
+
+</resources>

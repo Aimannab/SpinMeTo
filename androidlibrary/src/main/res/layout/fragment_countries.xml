@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/space4"
+    tools:context=".CountriesFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/menu"
+        app:theme="@style/ToolBarStyle"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <TextView
+        android:id="@+id/random_country"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:textSize="50sp"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/fab_margin"
+        android:gravity="center"
+
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="1dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/share_fab"
+            android:contentDescription="@string/share_fab_desc"
+            app:pressedTranslationZ="12dp"
+            android:elevation="@dimen/fab_elevation"
+            app:elevation="6dp"
+            android:stateListAnimator="@anim/fab_state_list_anim"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/shareicon"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:clickable="true"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/map_fab"
+            android:contentDescription="@string/map_fab_desc"
+            app:pressedTranslationZ="12dp"
+            android:elevation="@dimen/fab_elevation"
+            app:elevation="6dp"
+            android:stateListAnimator="@anim/fab_state_list_anim"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/googlemapsicon"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+</FrameLayout>

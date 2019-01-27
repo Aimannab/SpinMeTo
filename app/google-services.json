@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "661468460501",
+    "firebase_url": "https://imposing-vista-221815.firebaseio.com",
+    "project_id": "imposing-vista-221815",
+    "storage_bucket": "imposing-vista-221815.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661468460501:android:1d5baef166dcce0b",
+        "android_client_info": {
+          "package_name": "com.exampleapp.android.capstone_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661468460501-41segu3csi39g3qatghm0fi2uk443sl9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNiEYLWFSwR7octk51VDQ2Y4KM0CLOHuk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

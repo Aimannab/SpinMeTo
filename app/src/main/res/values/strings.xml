@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Capstone_Project</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="toastRight">Right</string>
+    <string name="toastLeft">Left</string>
+    <string name="toastTop">Top</string>
+    <string name="toastBottom">Bottom</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_title">#SpinMeTo</string>
+    <string name="swipe_desc">Swipe right to view random country selected for you</string>
+    <string name="welcome_note">Welcome to #SpinMeTo. Spin the globe to view your next holiday destination</string>
+
+
+</resources>
