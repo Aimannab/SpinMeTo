@@ -34,8 +34,8 @@ public class CountryDisplayTest {
         try {
             String countryName = asyncTask.get();
             Log.d(TAG, "Joke text: " + countryName);
-            assertNotNull(countryName);
-            //assertTrue(countryName.length()>0);
+            //assertNotNull(countryName);
+            assertTrue(countryName.length() > 0);
         }
 
         catch (Exception e) {
