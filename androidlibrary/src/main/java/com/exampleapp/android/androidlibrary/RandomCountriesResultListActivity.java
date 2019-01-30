@@ -126,7 +126,7 @@ public class RandomCountriesResultListActivity extends AppCompatActivity impleme
 
     }
 
-    private Cursor getAllRandomCountries() {
+    Cursor getAllRandomCountries() {
         return db.query(CountriesDBContract.RandomCountriesList.TABLE_NAME,
                 null,
                 null,

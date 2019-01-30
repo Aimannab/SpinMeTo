@@ -44,4 +44,11 @@ dependencies {
 
     //For Location Services
     implementation 'com.google.android.gms:play-services-location:15.0.1'
+
+    //Mockito imports
+    // required if you want to use Mockito for unit tests
+    testImplementation 'org.mockito:mockito-core:2.7.22'
+    // required if you want to use Mockito for Android tests
+    androidTestImplementation 'org.mockito:mockito-android:2.7.22'
+    testImplementation 'junit:junit:4.12'
 }

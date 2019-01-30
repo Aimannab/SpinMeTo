@@ -91,6 +91,12 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
 
+    //Mockito imports
+    // required if you want to use Mockito for unit tests
+    testImplementation 'org.mockito:mockito-core:2.7.22'
+    // required if you want to use Mockito for Android tests
+    androidTestImplementation 'org.mockito:mockito-android:2.7.22'
+
     //Espresso imports
     androidTestImplementation 'com.android.support:support-annotations:22.+'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'

@@ -13,7 +13,6 @@ import static org.junit.Assert.*;
 /**
  * Created by Aiman Nabeel on 29/01/2019.
  */
-//To test if async task is working
 @RunWith(AndroidJUnit4.class)
 public class CountryDisplayTest {
 
@@ -34,8 +33,8 @@ public class CountryDisplayTest {
         try {
             String countryName = asyncTask.get();
             Log.d(TAG, "Joke text: " + countryName);
-            //assertNotNull(countryName);
-            assertTrue(countryName.length() > 0);
+            assertNotNull(countryName);
+            //assertTrue(countryName.length() > 0);
         }
 
         catch (Exception e) {
