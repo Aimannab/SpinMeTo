@@ -1,4 +1,4 @@
-package com.exampleapp.android.capstone_project;
+package com.exampleapp.android.capstone_project_spinmeto;
 
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;

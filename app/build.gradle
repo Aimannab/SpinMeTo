@@ -19,7 +19,7 @@ android {
     buildToolsVersion '28.0.3'
 
     defaultConfig {
-        applicationId "com.exampleapp.android.capstone_project"
+        applicationId "com.exampleapp.android.capstone_project_spinmeto"
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 2

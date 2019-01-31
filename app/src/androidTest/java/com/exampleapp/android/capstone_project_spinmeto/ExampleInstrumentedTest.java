@@ -1,4 +1,4 @@
-package com.exampleapp.android.capstone_project;
+package com.exampleapp.android.capstone_project_spinmeto;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
