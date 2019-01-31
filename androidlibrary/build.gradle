@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 28
@@ -44,6 +46,7 @@ dependencies {
 
     //For Location Services
     implementation 'com.google.android.gms:play-services-location:15.0.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     //Mockito imports
     // required if you want to use Mockito for unit tests
@@ -51,4 +54,7 @@ dependencies {
     // required if you want to use Mockito for Android tests
     //androidTestImplementation 'org.mockito:mockito-android:2.7.22'
     //testImplementation 'junit:junit:4.12'
+}
+repositories {
+    mavenCentral()
 }
