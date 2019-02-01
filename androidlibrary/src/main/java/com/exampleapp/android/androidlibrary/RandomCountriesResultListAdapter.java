@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.squareup.sqlbrite3.QueryObservable;
+
 /**
  * Created by Aiman Nabeel on 09/11/2018.
  */

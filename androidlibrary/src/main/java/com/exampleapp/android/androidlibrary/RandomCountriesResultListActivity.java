@@ -1,5 +1,6 @@
 package com.exampleapp.android.androidlibrary;
 
+import android.arch.persistence.db.SupportSQLiteOpenHelper;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
@@ -17,6 +18,14 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.support.v4.content.AsyncTaskLoader;
 
+import com.squareup.sqlbrite3.BriteDatabase;
+import com.squareup.sqlbrite3.QueryObservable;
+import com.squareup.sqlbrite3.SqlBrite;
+
+import io.reactivex.Observable;
+import io.reactivex.functions.Consumer;
+import io.reactivex.schedulers.Schedulers;
+
 /**
  * Created by Aiman Nabeel on 09/11/2018.
  */
@@ -25,6 +34,8 @@ public class RandomCountriesResultListActivity extends AppCompatActivity impleme
     private SQLiteDatabase db;
     private RandomCountriesResultListAdapter mAdapter;
     private static final String TAG = RandomCountriesResultListActivity.class.getSimpleName();
+    SqlBrite sqlBrite;
+    BriteDatabase database;
 
     public static final String[] MAIN_RANDOM_COUNTRIES_PROJECTION = {
             CountriesDBContract.RandomCountriesList.COLUMN_RANDOM_COUNTRY_ID,
@@ -51,6 +62,11 @@ public class RandomCountriesResultListActivity extends AppCompatActivity impleme
 
         CountriesDBHelper dbHelper = new CountriesDBHelper(this);
         db = dbHelper.getWritableDatabase();
+
+        //Using SqlBrite
+        //sqlBrite = new SqlBrite.Builder().build();
+        //database = sqlBrite.wrapDatabaseHelper((SupportSQLiteOpenHelper) dbHelper, Schedulers.io());
+
 
         Cursor cursor = getAllRandomCountries();
         mAdapter = new RandomCountriesResultListAdapter(this, cursor);
@@ -127,12 +143,30 @@ public class RandomCountriesResultListActivity extends AppCompatActivity impleme
     }
 
     private Cursor getAllRandomCountries() {
-        return db.query(CountriesDBContract.RandomCountriesList.TABLE_NAME,
+
+        Cursor dbQuery = db.query(CountriesDBContract.RandomCountriesList.TABLE_NAME,
                 null,
                 null,
                 null,
                 null,
                 null,
                 null);
+
+        /*QueryObservable dbQuery = database.createQuery(CountriesDBContract.RandomCountriesList.TABLE_NAME,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null);
+
+        dbQuery.subscribe(new Consumer<Cursor>() {
+            @Override
+            public void accept(SqlBrite.Query query) throws Exception {
+                Cursor cursor = query.run();
+            }
+        });*/
+
+        return dbQuery;
     }
 }

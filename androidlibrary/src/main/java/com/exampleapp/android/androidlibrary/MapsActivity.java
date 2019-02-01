@@ -28,6 +28,12 @@ import com.google.android.gms.tasks.Task;
 import com.exampleapp.android.countrieslibrary.CountryData;
 import com.google.gson.Gson;
 
+import java.util.Observable;
+
+import io.reactivex.ObservableOnSubscribe;
+import io.reactivex.subjects.BehaviorSubject;
+import io.reactivex.subjects.Subject;
+
 /**
  * Created by Aiman Nabeel on 24/10/2018.
  */
@@ -134,8 +140,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             //Q: Why it's important to set getMapAsync in getLastLocation and not in onCreate?
                             //A: The problem occurs because both getMapAsync() and getLastLocation() depend on a listener, which we don't know
                             //exactly when they will be called. But we need to make sure we first set the latitude / longitude, before using them in the onMapReady().
-                            SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                            final SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                                     .findFragmentById(R.id.map);
+
                             mapFragment.getMapAsync(MapsActivity.this);
                         } else {
                             Log.i(TAG, "Inside getLocation function. Error while getting location");
