@@ -91,7 +91,7 @@ public class CountriesFragment extends Fragment {
             }
         });
 
-        //Connecting Tripadvisor FAB
+        //Connecting Airbnb FAB
         view.findViewById(R.id.airbnb_fab).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
