@@ -78,6 +78,18 @@ public class CountriesFragment extends Fragment {
             }
         });
 
+        //Connecting Tripadvisor FAB
+        view.findViewById(R.id.tripadvisor_fab).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://www.tripadvisor.co.uk/";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
+
+            }
+        });
+
         //update widget
         //CountriesWidgetService.startRandomCountriesListService(getContext(), country);
 

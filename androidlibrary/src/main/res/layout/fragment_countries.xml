@@ -92,6 +92,23 @@
             android:paddingEnd="10dp"
             android:clickable="true"/>
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tripadvisor_fab"
+            android:contentDescription="@string/map_fab_desc"
+            app:pressedTranslationZ="12dp"
+            android:elevation="@dimen/fab_elevation"
+            app:elevation="6dp"
+            android:stateListAnimator="@anim/fab_state_list_anim"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/tripadvisoricon"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:clickable="true"/>
+
     </LinearLayout>
 
 </FrameLayout>
