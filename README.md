@@ -17,7 +17,7 @@ You will use the skills you learned in all the previous core curriculum to compl
 ## MEETS SPECIFICATIONS
 App conforms to common standards found in the Android Nanodegree General Project Guidelines
 
-App is written solely in the Java Programming Language
+App is written solely in the Java and Kotlin.
 
 App utilizes stable release versions of all libraries, Gradle, and Android Studio.
 
