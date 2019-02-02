@@ -48,10 +48,11 @@ public class CountriesFragment extends Fragment {
                 Intent intent = getActivity().getIntent();
                 CountryData country = (CountryData) intent.getExtras().getSerializable(COUNTRIES_KEY_EXTRA);
 
+                String googleplaystore = "https://goo.gl/AXjdvy";
                 // TODO Add app link once shared on Google Play Store
                 startActivity(Intent.createChooser(ShareCompat.IntentBuilder.from(getActivity())
                         .setType("text/plain")
-                        .setText("#SpinMeTo " + country.getCountryName())
+                        .setText("#SpinMeTo " + country.getCountryName() + ".\n" + "Where will #SpinMeTo take you? Download the app here:" + "\n" + googleplaystore)
                         .getIntent(), getString(R.string.action_share)));
             }
         });
@@ -83,6 +84,18 @@ public class CountriesFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 String url = "https://www.tripadvisor.co.uk/";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
+
+            }
+        });
+
+        //Connecting Tripadvisor FAB
+        view.findViewById(R.id.airbnb_fab).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://www.airbnb.co.uk/";
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(url));
                 startActivity(intent);
