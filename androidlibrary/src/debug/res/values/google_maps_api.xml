@@ -21,5 +21,5 @@
     string in this file.
     Include key to make it work
     -->
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCQln_AgMyK5xPV6NI6o6ORVQQbZ--gAiw</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">YOUR_API_KEYw</string>
 </resources>
