@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.exampleapp.android.capstone_project_spinmeto">
+    package="com.exampleapp.android.capstone_project">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,7 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name="com.exampleapp.android.capstone_project_spinmeto.MainActivity">
+        <activity android:name="com.exampleapp.android.capstone_project.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,14 +24,14 @@
         </activity>
         <activity
             android:name="com.exampleapp.android.androidlibrary.CountriesActivity"
-            android:parentActivityName="com.exampleapp.android.capstone_project_spinmeto.MainActivity"
+            android:parentActivityName="com.exampleapp.android.capstone_project.MainActivity"
             tools:ignore="UnusedAttribute">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.exampleapp.android.capstone_project_spinmeto.MainActivity" />
+                android:value="com.exampleapp.android.capstone_project.MainActivity" />
         </activity>
 
-        <receiver android:name="com.exampleapp.android.capstone_project_spinmeto.SpinMeToWidget">
+        <receiver android:name="com.exampleapp.android.capstone_project.SpinMeToWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>

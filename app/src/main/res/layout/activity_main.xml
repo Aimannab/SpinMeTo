@@ -10,7 +10,7 @@
     <fragment
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:name="com.exampleapp.android.capstone_project_spinmeto.GlobeFragment"
+        android:name="com.exampleapp.android.capstone_project.GlobeFragment"
         android:id="@+id/fragment"
         android:contentDescription="@string/welcome_note"
         android:layout_centerVertical="true"

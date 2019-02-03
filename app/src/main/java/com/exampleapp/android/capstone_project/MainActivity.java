@@ -1,4 +1,4 @@
-package com.exampleapp.android.capstone_project_spinmeto;
+package com.exampleapp.android.capstone_project;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
