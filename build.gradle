@@ -2,7 +2,6 @@
 
 buildscript {
     ext.kotlin_version = '1.3.20'
-    ext.kotlin_version = '1.2.71'
 
     repositories {
         google()
@@ -12,7 +11,7 @@ buildscript {
         // V2: Include this dependency when using Endpoints Framework v2
         classpath 'com.google.guava:guava:19.0'
 
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:3.3.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         classpath 'com.google.gms:google-services:4.0.1'
