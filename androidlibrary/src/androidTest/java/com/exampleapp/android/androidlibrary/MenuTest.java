@@ -15,7 +15,9 @@ import static android.support.test.espresso.matcher.ViewMatchers.isEnabled;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 
-
+/**
+ * Created by Aiman Nabeel on 11/02/2019.
+ */
 public class MenuTest {
 
 
@@ -33,6 +35,7 @@ public class MenuTest {
     @Test
     public void testingMenu() {
 
+        //https://stackoverflow.com/questions/33965723/espresso-click-menu-item
         // Open the overflow menu OR open the options menu,
         // depending on if the device has a hardware or software overflow menu button.
         openActionBarOverflowOrOptionsMenu(InstrumentationRegistry.getTargetContext());
