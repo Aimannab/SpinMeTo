@@ -46,7 +46,8 @@
 
         <activity
             android:name="com.exampleapp.android.androidlibrary.RandomCountriesResultListActivity"
-            android:parentActivityName="com.exampleapp.android.androidlibrary.CountriesActivity"/>
+            android:parentActivityName="com.exampleapp.android.androidlibrary.CountriesActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
         <activity
             android:name="com.exampleapp.android.androidlibrary.MapsActivity"
