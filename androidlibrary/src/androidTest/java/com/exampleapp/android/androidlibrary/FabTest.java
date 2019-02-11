@@ -30,21 +30,13 @@ public class FabTest {
     }
 
 
+    //https://android.jlelse.eu/the-basics-of-android-espresso-testing-activities-fragments-7a8bfbc16dc5
     @Test
     public void testingFab() {
         //Find the view
         //Perform action on the view
 
-        //openActionBarOverflowOrOptionsMenu(InstrumentationRegistry.getTargetContext());
-
-        //onView((withId(com.exampleapp.android.androidlibrary.R.id.tripadvisor_fab)))
-        //.perform(click());
-
-        //onView(withText("Countries List")).perform(click());
-
-        //Check if the view does what is expected
-        //onView(withId(R.menu.menu)).check(matches(isEnabled()));
-
+        //REM: Only works when setRandomCountry() from CountriesFragment is commented out! Because otherwise you get error since setRandomCountry() is connected with the swipe gesture
         onView(withId(R.id.tripadvisor_fab)).perform(click());
 
 
