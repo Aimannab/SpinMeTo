@@ -30,7 +30,6 @@ public class SwipeTest {
 
         onView(withId(R.id.tvSwipeDescription)).perform(swipeRight());
 
-
     }
 
 }

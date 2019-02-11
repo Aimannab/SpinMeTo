@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.exampleapp.android.androidlibrary">
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -30,6 +31,12 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/. 
         -->
+
+        <activity
+            android:name="com.exampleapp.android.androidlibrary.CountriesActivity"
+            android:label="CountriesActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+
         <meta-data android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
