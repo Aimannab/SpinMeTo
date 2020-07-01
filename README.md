@@ -1,5 +1,5 @@
 # Capstone_Project
-Traveller's Destination Selector App. Final project for Udacity's "Android App Developer Nanodegree Program" that helps travellers to select their next holiday destination, provides navigation and sharing on social media platforms. This app was planned and designed based on my own personal idea. This app is published on the Google Play Store.
+Traveller's Destination Selector App. Final project for Udacity's "Android App Developer Nanodegree Program" that helps travellers to select their next holiday destination, provides navigation and sharing on social media platforms. This app was planned and designed based on my own personal idea.
 
 ![](spin.gif)
 
